@@ -1,5 +1,10 @@
 def find_first_unique_character(text):
-    pass
+    words = text.split() #розбиваю текст на окремі слова
+    unique_chars = [] #список для зберігання першого унікального символу
+
+
+
+
 
 
 text = '''The Tao gave birth to machine language. Machine language gave birth
