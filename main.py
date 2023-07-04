@@ -10,11 +10,16 @@ def find_first_unique_character(text):
             else:
                 char_count[char] += 1
 
+        for char in word: #знову в циклі збираємо унікальні символи зі значенням 1
+            if char_count[char] == 1:
+                unique_chars.append(char) #наповнюємо список унікальних символів
+                break
 
+    for char in unique_chars: #пошук першого унікального символу
+        if unique_chars.count(char) == 1:
+            return char #повертаємо цей символ
 
-
-
-
+    return None
 
 text = '''The Tao gave birth to machine language. Machine language gave birth
 to the assembler.
